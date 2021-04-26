@@ -93,7 +93,7 @@ body {
 }
 
 .info {
-  @include adaptive-margin(170, 16);
+  @include adaptive-margin-info(170, 16);
 }
 
 
