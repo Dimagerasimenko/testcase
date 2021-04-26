@@ -35,16 +35,13 @@ window.addEventListener('DOMContentLoaded', () => {
             toogleCondition(arDown, 'hide');
             toogleCondition(arUp, 'hide');
             toogleCondition(dropList, 'hide');
-
-            if (dropList.classList.contains('hide')) {
-                listItem.forEach(item => {
-                    item.addEventListener('click', () => {
-                        inputValue.value = item.getAttribute('data-value');
-                        text.innerHTML = item.getAttribute('data-value');
-                        text.style.color = 'black';
-                    })
+            listItem.forEach(item => {
+                item.addEventListener('click', () => {
+                    inputValue.value = item.getAttribute('data-value');
+                    text.innerHTML = item.getAttribute('data-value');
+                    text.style.color = 'black';
                 })
-            }
+            })
 
 
         })
