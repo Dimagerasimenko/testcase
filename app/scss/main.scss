@@ -92,6 +92,10 @@ body {
   }
 }
 
+.info {
+  @include adaptive-margin(170, 16);
+}
+
 
 .hide {
   display: none;
