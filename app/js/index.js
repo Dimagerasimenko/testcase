@@ -25,7 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     list.forEach(i => {
-        console.log(i)
         i.addEventListener('click', () => {
             const arDown = i.querySelector('.arrow-down'),
                 arUp = i.querySelector('.arrow-up'),
