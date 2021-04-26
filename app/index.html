@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test task</title>
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="container">
+    <form action="#" class="form">
+        <h2 class="form-caption">FTL: Прямая машина</h2>
+        <div class="form__item">
+            <div class="item__caption">
+                <span class="item__point">1</span>
+                <h3>Маршрут</h3>
+            </div>
+            <div class="item__route">
+                <div class="item__wrapper">
+                    <label for="from" class="item__label">Откуда</label>
+                    <input type="text" id="from" name="route__from" class="item__input">
+                </div>
+                <div class="item__wrapper">
+                    <label for="to" class="item__label">Куда</label>
+                    <input type="text" id="to" name="route__to" class="item__input">
+                </div>
+            </div>
+        </div>
+
+        <div class="form__item">
+            <div class="item__caption">
+                <span class="item__point">2</span>
+                <h3>Транспорт</h3>
+            </div>
+            <div class="item__vechicle">
+                <div class="item__wrapper">
+                    <span class="item__label">Грузоподъемность</span>
+                    <ul class="select">
+                        <input type="hidden" name="vechicle-payload">
+                        <li class="select__first-item not-selected">
+                            <span class="select-text">Не выбрано</span>
+                            <ul class="select__dropdown-list hide">
+                                <li class="list__item" data-value="Вариант 1">Вариант 1</li>
+                                <li class="list__item" data-value="Вариант 2">Вариант 2</li>
+                                <li class="list__item" data-value="Вариант 3">Вариант 3</li>
+                                <li class="list__item" data-value="Вариант 4">Вариант 4</li>
+                                <li class="list__item" data-value="Вариант 5">Вариант 5</li>
+                            </ul>
+                            <div class="toggle-box">
+                                <img class="arrow-down" src="./img/src/arrowdown.svg" alt="arrow-down">
+                                <img class="arrow-up hide" src="./img/src/arrowup.svg" alt="arrow-up">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="item__wrapper">
+                    <span class="item__label">Способ погрузки</span>
+                    <ul class="select">
+                        <li class="select__first-item">
+                            <input type="hidden" name="vechicle-loading-method">
+                            <span class="select-text">Задняя</span>
+                            <ul class="select__dropdown-list hide">
+                                <li class="list__item" data-value="Вариант 1">Вариант 1</li>
+                                <li class="list__item" data-value="Вариант 2">Вариант 2</li>
+                                <li class="list__item" data-value="Вариант 3">Вариант 3</li>
+                                <li class="list__item" data-value="Вариант 4">Вариант 4</li>
+                                <li class="list__item" data-value="Вариант 5">Вариант 5</li>
+                            </ul>
+                            <div class="toggle-box">
+                                <img class="arrow-down" src="./img/src/arrowdown.svg" alt="arrow-down">
+                                <img class="arrow-up hide" src="./img/src/arrowup.svg" alt="arrow-up">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="form__item">
+            <div class="item__caption">
+                <span class="item__point">3</span>
+                <h3>Груз</h3>
+            </div>
+            <div class="item__cargo">
+                <div class="cargo__part-one">
+                    <div class="item__wrapper big">
+                        <span class="item__label">Тип груза</span>
+                        <ul class="select">
+                            <input type="hidden" name="type-cargo">
+                            <li class="select__first-item not-selected">
+                                <span class="select-text">Не выбран</span>
+                                <ul class="select__dropdown-list hide">
+                                    <li class="list__item" data-value="Вариант 1">Вариант 1</li>
+                                    <li class="list__item" data-value="Вариант 2">Вариант 2</li>
+                                    <li class="list__item" data-value="Вариант 3">Вариант 3</li>
+                                    <li class="list__item" data-value="Вариант 4">Вариант 4</li>
+                                    <li class="list__item" data-value="Вариант 5">Вариант 5</li>
+                                </ul>
+                                <div class="toggle-box">
+                                    <img class="arrow-down" src="./img/src/arrowdown.svg" alt="arrow-down">
+                                    <img class="arrow-up hide" src="./img/src/arrowup.svg" alt="arrow-up">
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cargo__sub">
+                        <div class="item__wrapper type-danger">
+                            <span class="item__label">Класс опасности</span>
+                            <ul class="select">
+                                <input type="hidden" name="type-danger">
+                                <li class="select__first-item not-selected">
+                                    <span class="select-text">Класс 5 — Окисляющие вещества и органические перекиси</span>
+                                    <ul class="select__dropdown-list hide">
+                                        <li class="list__item" data-value="Вариант 1">Вариант 1</li>
+                                        <li class="list__item" data-value="Вариант 2">Вариант 2</li>
+                                        <li class="list__item" data-value="Вариант 3">Вариант 3</li>
+                                        <li class="list__item" data-value="Вариант 4">Вариант 4</li>
+                                        <li class="list__item" data-value="Вариант 5">Вариант 5</li>
+                                    </ul>
+                                    <div class="toggle-box">
+                                        <img class="arrow-down" src="./img/src/arrowdown.svg" alt="arrow-down">
+                                        <img class="arrow-up hide" src="./img/src/arrowup.svg" alt="arrow-up">
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item__wrapper">
+                            <label class="item__label" for="declared">Объявленная ценность, ₽</label>
+                            <input type="text" placeholder="≥ 1" id="declared" name="declared-value"
+                                   class="item__input">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="checkbox">
+                    <div class="checkbox__item ">
+                        <input type="checkbox" class="hide-check">
+                        <img class="check-mark visi-hidden" src="./img/src/fortempcheckbox.svg" alt="check-mark">
+                    </div>
+                    <span>Требуется температурный режим</span>
+                </div>
+                <div class="cargo__part-two hide">
+                    <div class="item__wrapper">
+                        <label class="item__label" for="temperature-from">От, °C</label>
+                        <input type="text" placeholder="-20"
+                               id="temperature-from" name="temperature-from" class="item__input">
+                    </div>
+                    <div class="item__wrapper">
+                        <label class="item__label" for="temperature-to">До, °C</label>
+                        <input type="text" placeholder="+23" id="temperature-to" name="temperature-to"
+                               class="item__input">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item last">
+            <div class="item__caption">
+                <span class="item__point">4</span>
+                <h3>Время</h3>
+            </div>
+            <div class="time">
+                <div class="time__descr">
+                    <span>Когда прибыть на точку</span>
+                    <span><span class="dest-value">700</span> км в день</span>
+                </div>
+                <div class="item__wrapper">
+                    <div class="time__address">
+                        <div class="circle red">
+                            <div class="circle-inside"></div>
+                        </div>
+                        <div class="address">
+                            <span class="address__text">
+                                Длинный адрес с градиентом
+                            </span>
+                        </div>
+                        <button type="button" class="address__select">НЕ ВЫБРАНО</button>
+                    </div>
+                    <div class="time__address">
+                        <div class="circle">
+                            <div class="circle-inside"></div>
+                        </div>
+                        <div class="address">
+                            <span class="address__text">
+                                Адрес не выбран
+                            </span>
+                        </div>
+                        <button type="button" class="address__select">НЕ ВЫБРАНО</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="form__comment">
+            <label for="comment" class="comment__label">Комментарий к заказу</label>
+            <input
+                    name="comment"
+                    id="comment"
+                    placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу">
+        </div>
+    </form>
+    <div class="info">
+        <p class="info__text">
+            Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+        </p>
+    </div>
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>
